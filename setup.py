@@ -1,5 +1,6 @@
 from setuptools import setup
 from setuptools import find_packages
+from typing import List
 
 
 def readme() -> str:
@@ -7,7 +8,7 @@ def readme() -> str:
         return file.read()
 
 
-def requirements() -> list[str]:
+def requirements() -> List[str]:
     return ["aiohttp", "aioboto3"]
 
 

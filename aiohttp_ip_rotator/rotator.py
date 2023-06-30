@@ -14,6 +14,7 @@ from asyncio import sleep
 from asyncio import gather
 from asyncio import create_task
 from uuid import uuid4
+from typing import List
 
 
 class RotatingClientSession(ClientSession):
@@ -62,7 +63,7 @@ class RotatingClientSession(ClientSession):
     def _print_if_verbose(self, message: str):
         if self.verbose: print(f">> {message}")
 
-    async def _get_apis(self, region: str, client: BaseClient) -> list[dict]:
+    async def _get_apis(self, region: str, client: BaseClient) -> List[dict]:
         position = None
         complete = False
         apis = []
