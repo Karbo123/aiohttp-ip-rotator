@@ -3,7 +3,7 @@ An asynchronous alternative to the requests-ip-rotator  (https://github.com/Ge0r
 
 ## Installation
 ```commandline
-pip install aiohttp-ip-rotator
+pip install git+https://github.com/Karbo123/aiohttp-ip-rotator.git
 ```
 
 ## Example
